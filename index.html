@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+  <title>chess-tutorial</title>
+  <style>
+    body{
+      background-color: lightpink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Chess-tutorial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+       
+          
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class=mx-2>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModalCenter">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModalCenter"></button>
+      </div>
+    </div>
+  </nav>
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to coder.me</h2>
+          <p>Tech Design,Develpment and Trends</p>
+          <button class="btn btn-danger">Technolgy</button>
+          <button class="btn btn-primary">Web Devlopment</button>
+          <button class="btn btn-success">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Best coding blog</h2>
+          <p>Tech Design,Develpment and Trends</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Best Develpment blog</h2>
+          <p>Tech Design,Develpment and Trends</p>
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 1: Setup, Turns, and Taking Pieces</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+              <b>Setup:</b>
+              The board is setup as shown. There should always be a white square at the closest right-hand side for both
+              players.
+              Remember that the queen must be on a square that matches her color. <br>
+              <b>Turns:</b>
+              White always moves first, and players alternate turns. Players can only move one piece at a time,
+              except when castling (explained later). <br>
+
+              <b>Taking Pieces:</b>
+              Players take pieces when they encounter an opponent in their movement path. Only pawns take differently
+              than they move (explained later). Players cannot take or move through their own pieces.
+            </p>
+            
+          </div>
+          <img src="213.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 2: Pawn Movement</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto"><b>Pawns</b> 
+               only move forward. On the first move a pawn can move one or two spaces, every
+              subsequent move can only be one space. Pawns move diagonally to take opponents.
+
+             <b>Pawn Promotion:</b> 
+              If a pawn reaches the opposite side of the board, it is promoted to a higher piece (except king).
+              There is no limit to how many pawns can be promoted.</p>
+
+          </div>
+
+          <img src="images.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">chess-tutorial</strong>
+          <h3 class="mb-0">Step 3: Rook</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto"><b>Rooks</b>  move in a continuous line forwards, backwards and side-to-side.</p>
+        </div>
+        <img src="rook.jpg" width="200" height="250" alt="">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-warning">chess-tutorial</strong>
+          <h3 class="mb-0">Step 4: Knight</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto"><b>Knights</b> are the only pieces that "jump" off the board. Unlike other pieces they are
+            not blocked if there are pieces between them and their destination square.
+
+            To make it easier to remember how a knight moves think of an L.
+            Two spaces in a direction forward, backward or side-to-side, and one space at a right turn./p>
+            
+        </div>
+
+        <img src="66.png" width="200" height="250" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 5: Bishop</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+             <b>Bishops</b>
+              move in continuous diagonal lines in any direction.</p>
+            
+          </div>
+          <img src="chess1.png" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 6: Queen
+            </h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">The <b>queen</b> 
+               moves in continuous diagonal and straight lines. Forward, backward and
+              side-to-side.</p>
+
+          </div>
+
+          <img src="chessboard-queen.png" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 7: King</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+              The <b>king</b>  can move in any direction, one square at a time.
+
+              A king cannot move to a square that is under attack by the opponent.</p>
+          
+          </div>
+          <img src="king.jpeg" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 8: Special Move: Castling</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto"><b>Castling is the only move that allows two pieces to move during the same turn.</b> 
+
+             * During castling a king moves two spaces towards the rook that it will castle with, and the rook jumps to
+              the other side. The king can castle to either side as long as:
+
+              1. The king has not moved.
+              2. The king is not in check.
+              3. The king does not move through or into check.
+              4. There are no pieces between the king and castling-side rook.
+              5. The castling-side rook has not moved.
+
+              * It does not matter:
+
+              A. If the king was in check, but is no longer.
+              B. If the rook can be attacked by an opponent's piece before castling.</p>
+
+          </div>
+
+          <img src="ww2.webp" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 9: Special Move: En Passant</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+             <b>En passant</b>  is a special movement for pawns attacking pawns. It only applies if your opponent moves a pawn
+              two spaces, and its destination space is next to your pawn.
+              You can take the opposing piece by moving forward-diagonal to your pawn's attacked square.</p>
+            
+          </div>
+          <img src="enpass.png" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 10: Check
+            </h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">A king is in <b>check</b>  when an opponent's piece is in a position that can attack the king. 
+              <br>
+              A player must move their king out of check, block the check or capture the attacking piece.
+<br>
+              A player cannot move their king into check.
+          </div>
+
+          <img src="check.png" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 11: Checkmate</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+              Putting an opponent's king in <b>"checkmate"</b>  is the only way to win the game.
+
+              A king is in checkmate if it is in check, the opponent's piece that has the king in check cannot be
+              captured, the check cannot be blocked, and the king cannot move to a square that is not under attack.
+<br>
+              In the illustration the white queen has the black king in check, and all of the spaces where the king can
+              move can be attacked by the queen. The king cannot take the queen, because the knight is protecting the
+              queen. <br>
+              The black bishop cannot block the queen. This is checkmate.</p>
+           
+          </div>
+          <img src="CheckmateProper.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 12: Stalemate</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Simply put, a <b>"Stalemate"</b>  is a tie. It is achieved if there are no legal moves for a
+              player to make.
+<br>
+              In this illustration it is white's turn. All spaces around the king are being attacked, but the king is
+              not in check, therefore it cannot move. The only other white piece, the pawn, is blocked by the king.
+              Because movement is impossible, the game is a stalemate.
+<br>
+              If white had another piece somewhere on the board that was not blocked, it would have to move. The game
+              would continue.</p>
+
+          </div>
+
+          <img src="stale.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">chess-tutorial</strong>
+            <h3 class="mb-0">Step 13: Basic Strategy</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">
+              Chess is an incredibly complex strategic game, and it is impossible to go into all of the possible tactics
+              one could use to win. However, I wanted to leave the new player with a few hints that will hopefully aid
+              in victory.
+
+              <b>Piece Value:</b> 
+              
+              Obviously you want to protect your pieces from capture, but it helps to know which pieces are the
+              strongest so you can decide who to save if you must choose between two. A good explanation of piece value
+              is available on Wikipedia
+
+              Queen: Strongest = Most Value
+              Rook
+              Bishop, Knight
+              Pawn: Weakest = Least Value
+
+              The bishop and the knight are commonly considered equal on the value scale, however many feel (myself
+              included) that the bishop has a slight edge over the knight.
+
+              Pawns become more valuable as they near promotion.
+
+             <b>Pawn Promotion:</b> 
+             
+              Although a pawn can be promoted to a variety of pieces, the strongest choice is almost always to promote
+              to queen.
+
+             <b>Board Control:</b> 
+              When building defenses, remember to look at the board and gauge how strong you are in certain areas of the
+              board. Try an keep power distributed fairly evenly, and bring pieces over to add strength if you see an
+              attack coming.
+
+              When attacking, it's a bad idea to let any of your pieces become cut off from your main force. I find it
+              helpful to have a support piece in mind when making an attack. Using pieces in tandem almost always yields
+              a better result than using one piece alone.
+            </p>
+
+          </div>
+          <img src="213.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">chess-tutorial</strong>
+            <h3 class="mb-0">Step 14: Go Play</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">So now you know the basics. Go get a board an play! No one around?
+
+              Natwarlal is a good, free chess program.
+
+              Chessclub.com is an online club you can join, but it has a fee. However, there are tournaments where you
+              can win cash prizes. You can even watch grandmasters play.
+
+              Enjoy!
+          </div>
+
+          <img src="c.jpg" width="200" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p> 2020-2021 chess-tutorial. <a href="#">Privacy</a> <a href="#">Terms</a></p>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
